@@ -1,0 +1,17 @@
+body {
+  background-color: red; }
+
+.row {
+  padding: 0 15px;
+  margin: 0 -15px; }
+
+.hidden {
+  background-color: blue;
+  visibility: hidden; }
+
+.dropdown {
+  background-color: green;
+  border: 2px solid black; }
+
+.shown {
+  background-color: purple; }
