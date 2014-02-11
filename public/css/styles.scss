@@ -13,6 +13,17 @@ body {
 	margin: 0 -15px;
 }
 
+//Nav-bar
+.navbar-default {
+	background-color: orange;
+	border: yellow;
+	height: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
 //Boxes
 
 .hidden {
