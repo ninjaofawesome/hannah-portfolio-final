@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<form action="/" method="POST">
 <html lang = "en">
 	<head>
 		<meta charset = "utf-8">
@@ -39,23 +39,25 @@
 	                        <p>This is your column on the right</p>
 	                </div>
 	            <div class = "row">
-	            	<form action="/about" method="POST">
+	            	
 		                <div class = "col-md-12">
 		                    <label for "info">What would you like to know about me?</label>
 		                </div>
 		                <div class ="col-md-12">
-		                    <select class = "dropdown" id = "info" name="education">
-		                        <option class="professional" value="college">My Alma Mater(s)</option>
-		                        <option class="professional" value="career">My Work Experience</option>
-		                        <option class="professional" value="interests">My Technical Interests</option>
-		                        <option class="professional" value="languages">Programming Languages</option>
+		                    <select onchange="this.form.submit()" id = "info" class = "dropdown" name="background">
+		                    	<a href = "/"><option class="professional" value="/nil">Select One</option></a>
+		                        <a href = "/college"><option class="professional" value="/college">My Alma Mater(s)</option></a>
+		                        <a href = "/work"><option class="professional" value="/career">My Work Experience</option></a>
+		                        <a href = "/interests"><option class="professional" value="/interests">My Technical Interests</option></a>
+		                        <a href = "/languages"><option class="professional" value="/languages">Programming Languages</option></a>
 		                    </select>
 		                </div>
 		                <div class = "col-md-12">
 		                    <label for="work">What Can I Show You?</label>
 		                </div>
 		                <div class = "col-md-12">
-		                    <select class= "dropdown" id = "work" name="flatiron">
+		                    <select onchange="this.form.submit()"  id = "work" class= "dropdown" name="portfolio_example">
+		                    	<option class="portfolio" value="nil">Select One</option>
 		                        <option class="portfolio" value="ruby">Airport</option>
 		                        <option class="portfolio" value="sinatra[0]">East Coast/West Coast</option>
 		                        <option class="portfolio" value="sinatra[1]">The Great Oracle</option>

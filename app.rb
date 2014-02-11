@@ -7,12 +7,32 @@ module Portfolio
 	class MyPortfolio < Sinatra::Application
 
 		get '/' do
-			@results = Results.new
 			erb :index
 		end
 
-		post '/about' do
-			erb :work
+		# post'/about' do
+		# 	erb :about
+		# end
+
+		get '/college' do
+			"hello college"
+		end
+		get '/career' do
+			"hello career"
+		end
+
+		get '/interests' do
+			"hello interests"
+		end
+
+		get '/languages' do
+			"hello languages"
+		end
+
+
+		post '/' do
+			erb :params["background"]
+			# erb :about
 		end
 
 	end #<--This is the end of your class
