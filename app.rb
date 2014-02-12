@@ -16,8 +16,8 @@ class CreateHannah < Sinatra::Application
 	end
 
     get '/about' do
-        @hannah = Hannah.all
-        @hannah.to_json
+        # @hannah = Hannah.all
+        # @hannah.to_json
     end
 
 	post '/about' do
