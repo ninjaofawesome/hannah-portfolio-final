@@ -1,7 +1,9 @@
-var hannahApp = angular.module ('hannahControllers', []);
+var hannahApp = angular.module ('hannahApp', []);
 
-hannahApp.controller('HannahListCtrl', ['$scope', '$http', function($scope, Hannah){
-	$http.get('http://localhost:9393/about').success(function(data){
-		$scope.hannah = data;
-	});
+hannahApp.controller('HannahListCtrl', ['$scope', 'Hannah', function($scope, Hannah){
+	// $http.get('http://localhost:9393/about').success(function(data){
+	// 	$scope.hannah = data;
+
+	$scope.hannah = Hannah.query();
+	
 }]);

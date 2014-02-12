@@ -2,9 +2,9 @@
 
 var createHannah = angular.module('createHannah', [
 	'ngRoute',
-	'hannahControllers'
-	// 'hannahFilters',
-	// 'hannahServices'
+	'hannahControllers',
+	'hannahFilters',
+	'hannahServices'
 	]);
 
 createHannah.config(['$routeProvider', function($routeProvider){

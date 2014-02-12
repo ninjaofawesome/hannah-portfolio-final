@@ -1,4 +1,17 @@
 //variables
+$dk-blue: #052f6d;
+$dk-dusty-blue: #2b4b73;
+$pop-blue: #0f4dab;
+$lt-blue: #437dd4;
+$pale-blue: #6a94d4;
+$dk-gray: #6a6c6d;
+$md-dk-gray: #7c7e7f;
+$md-gray: #baddbf;
+$lt-gray: #dfe3e5;
+$pop-white: #f8fcff;
+$cool-brown: #403826;
+$warm-brown: #372710; 
+
 @font-face {
 	font-family: 'Motion Picture';
 	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot'); /* IE9 Compat Modes */
@@ -29,7 +42,8 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    // font-size: 1em;   
+    // font-size: 1em;
+    color: $pop-white;   
 }
 
 .row {
