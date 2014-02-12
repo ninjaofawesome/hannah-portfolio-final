@@ -2,16 +2,16 @@ require 'bundler'
 Bundler.require
 require 'sinatra/activerecord'
 
-
 Dir["./lib/*"].each {|file| require file }
 
 class CreateHannah < Sinatra::Application
 
 
-	set :database, "sqlite3:///hannahsdb.db"
+	set :database, "sqlite3:///database.db"
 
 	get '/' do
-        File.read(File.join('public/app', 'index.html'))
+		File.read('public/app/index.html');
+        # File.read(File.join('public/app', 'index.html'))
 		# erb :index
 	end
 

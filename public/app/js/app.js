@@ -1,13 +1,13 @@
 'use strict';
 
-var hannahApp = angular.module('hannahApp', [
+var createHannah = angular.module('createHannah', [
 	'ngRoute',
-	'hannahControllers',
-	'hannahFilters',
-	'hannahServices'
+	'hannahControllers'
+	// 'hannahFilters',
+	// 'hannahServices'
 	]);
 
-hannahApp.config(['$routeProvider', function($routeProvider){
+createHannah.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 		when('/', {
 			templateUrl: 'partials/welcome-page.html',
