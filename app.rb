@@ -1,10 +1,11 @@
 require 'bundler'
 Bundler.require
 
+require 'sinatra/activerecord'
 Dir["./lib/*"].each {|file| require file }
 
 module Portfolio
-	class MyPortfolio < Sinatra::Application
+	class CreateHannah < Sinatra::Application
 
 		get '/' do
 			erb :index
@@ -31,8 +32,7 @@ module Portfolio
 
 
 		post '/' do
-			erb :params["background"]
-			# erb :about
+			erb :about
 		end
 
 	end #<--This is the end of your class

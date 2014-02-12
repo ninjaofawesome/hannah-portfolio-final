@@ -1,11 +1,35 @@
 //variables
-$background-color: red;
+@font-face {
+	font-family: 'Motion Picture';
+	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+@font-face {
+	font-family: 'Go Bold';
+	src: url('../fonts/gobold/gobold_bold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/gobold/gobold_bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/gobold/gobold_bold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/gobold/gobold_bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/gobold/gobold_bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+
 
 //general
 
-body {
-	background-color:$background-color;
-	
+
+
+body{
+    background: url('../img/flatiron.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    // font-size: 1em;   
 }
 
 .row {
@@ -15,7 +39,7 @@ body {
 
 //Nav-bar
 .navbar-default {
-	background-color: orange;
+	background-color: rgba(255, 0, 0, .5);
 	border: yellow;
 	height: 30px;
 }
@@ -42,4 +66,18 @@ body {
 
 .shown {
 	background-color: purple;
+}
+
+//fonts
+
+.titlescript {
+	font-family: 'Motion Picture', Helvetica, Arial, sans-serif;
+	font-size: 300%;
+	color: blue;
+}
+
+.titlefont {
+	font-family: 'Go Bold', Helvetica, Arial, sans-serif;
+	font-size: 200%;
+	color: red;
 }
