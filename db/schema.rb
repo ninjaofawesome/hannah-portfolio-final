@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140212145546) do
+ActiveRecord::Schema.define(version: 20140214214659) do
 
   create_table "hannahs", force: true do |t|
     t.string "achievement_name"
     t.string "achievement_info"
+  end
+
+  create_table "portfolio", force: true do |t|
+    t.string "work_name"
+    t.string "work_info"
   end
 
 end

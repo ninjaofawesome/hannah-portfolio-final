@@ -37,14 +37,6 @@ $warm-brown: #372710;
 
 //general
 
-.box {
-	height: 100px;
-	width: 100px;
-	background-color: red;
-	visibility: hidden;
-}
-
-
 
 body{
     background: url('../img/hannah.jpg') no-repeat center center fixed;
@@ -74,9 +66,20 @@ body{
 
 //Boxes
 
-.hidden {
-	visibility: hidden;
+// .box {
+// 	height: 100px;
+// 	width: 100px;
+// 	background-color: red;
+// 	visibility: hidden;
+// }
+
+.background-box {
+	
+	min-height: 600px;
+	background-color: $pop-blue;
 }
+
+
 
 //Buttons and Selection
 
@@ -112,7 +115,8 @@ option {
 .titleblock {
 	font-family: 'turnpike', Helvetica, Arial, sans-serif;
 	font-size: 400%;
-	color: $lt-gray;
+	font-weight: 900;
+	color: $lt-blue;
 }
 
 a {

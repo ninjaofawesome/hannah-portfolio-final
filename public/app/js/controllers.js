@@ -9,10 +9,14 @@ hannahControllers.controller('HannahListCtrl', ['$scope', 'Hannah', function($sc
 
 }]);
 
-hannahControllers.controller('HannahDetailCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
-		$http.get('/about/' + $routeParams.hannahsId + '.json').
-			function(data) {
-				$scope.hannah = data[0];
-			});
+hannahControllers.controller('HannahDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $http.get("me/-" + $routeParams.hannahId + '.json').success(function(data) {
+      $scope.hannah = data[0];
+      // $scope.mainImg = data[0].images[0];
+    });
 
-}]);
+    // $scope.setImage = function(imageName) {
+    //   $scope.mainImg = imageName;
+    //}
+  }]);

@@ -25,7 +25,8 @@ class CreateHannah < Sinatra::Application
     end
 
 	post '/about' do
-        @hannah = Hannah.create!(params)
+		#figure out what is causing sinatra to freak out on this.
+        # @hannah = Hannah.create!(params)
 
         redirect '/'
 		# erb :about

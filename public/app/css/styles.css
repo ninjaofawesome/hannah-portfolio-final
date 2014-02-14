@@ -12,12 +12,6 @@
   src: url("../fonts/pacifico/pacifico-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico-webfont.woff") format("woff"), url("../fonts/pacifico/pacifico-webfont.ttf") format("truetype"), url("../fonts/pacifico/pacifico-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
-.box {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  visibility: hidden; }
-
 body {
   background: url("../img/hannah.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -38,8 +32,9 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: #052f6d; }
 
-.hidden {
-  visibility: hidden; }
+.background-box {
+  min-height: 600px;
+  background-color: #0f4dab; }
 
 select {
   background-color: #052f6d;
@@ -65,7 +60,8 @@ option {
 .titleblock {
   font-family: 'turnpike', Helvetica, Arial, sans-serif;
   font-size: 400%;
-  color: #dfe3e5; }
+  font-weight: 900;
+  color: #437dd4; }
 
 a {
   color: #052f6d; }
