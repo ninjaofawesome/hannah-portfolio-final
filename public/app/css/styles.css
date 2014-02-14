@@ -77,3 +77,6 @@ a:focus {
 
 .dropdown-space {
   margin: 5% 0 0 0; }
+
+#shady {
+  background-color: rgba(255, 0, 0, 0.5); }
