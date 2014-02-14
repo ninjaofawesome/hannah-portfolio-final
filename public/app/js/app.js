@@ -17,6 +17,10 @@ hannahApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'partials/my-work.html',
 			controller: 'HannahListCtrl'
 		}).
+		when('/about/:id',{
+			templateUrl: 'partials/my-work.html',
+			controller: 'HannahDetailCtrl'
+		}).
 		otherwise({
 			redirectTo: '/'
 		});

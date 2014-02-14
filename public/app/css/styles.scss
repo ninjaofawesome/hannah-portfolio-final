@@ -41,7 +41,10 @@ $warm-brown: #372710;
 	height: 100px;
 	width: 100px;
 	background-color: red;
+	visibility: hidden;
 }
+
+
 
 body{
     background: url('../img/hannah.jpg') no-repeat center center fixed;
@@ -50,7 +53,7 @@ body{
     -o-background-size: cover;
     background-size: cover; 
     // font-size: 1em;
-    color: $pop-white;   
+    color: $lt-gray;   
 }
 
 .row {
@@ -72,7 +75,6 @@ body{
 //Boxes
 
 .hidden {
-	background-color: blue;
 	visibility: hidden;
 }
 
@@ -99,18 +101,29 @@ option {
 	background-color: purple;
 }
 
-//fonts
+//fonts and links
 
 .titlescript {
 	font-family: 'Pacifico', Helvetica, Arial, sans-serif;
 	font-size: 300%;
-	color: $pop-white;
+	color: $lt-gray;
 }
 
 .titleblock {
 	font-family: 'turnpike', Helvetica, Arial, sans-serif;
 	font-size: 400%;
+	color: $lt-gray;
+}
+
+a {
+	color: $dk-blue;
+}
+
+a:hover {
 	color: $pop-blue;
+}
+a:focus {
+	color: $lt-blue;
 }
 
 //spacing

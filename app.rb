@@ -24,11 +24,11 @@ class CreateHannah < Sinatra::Application
         @hannah.to_json
     end
 
-	# post '/about' do
- #        @hannah = Hannah.create!(params)
+	post '/about' do
+        @hannah = Hannah.create!(params)
 
- #        redirect '/'
-	# 	# erb :about
-	# end
+        redirect '/'
+		# erb :about
+	end
 
 end #<--This is the end of your class

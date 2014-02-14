@@ -8,3 +8,11 @@ hannahControllers.controller('HannahListCtrl', ['$scope', 'Hannah', function($sc
 
 
 }]);
+
+hannahControllers.controller('HannahDetailCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
+		$http.get('/about/' + $routeParams.hannahsId + '.json').
+			function(data) {
+				$scope.hannah = data[0];
+			});
+
+}]);

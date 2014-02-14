@@ -15,7 +15,8 @@
 .box {
   height: 100px;
   width: 100px;
-  background-color: red; }
+  background-color: red;
+  visibility: hidden; }
 
 body {
   background: url("../img/hannah.jpg") no-repeat center center fixed;
@@ -23,7 +24,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #f8fcff; }
+  color: #dfe3e5; }
 
 .row {
   padding: 0 15px;
@@ -38,7 +39,6 @@ body {
   color: #052f6d; }
 
 .hidden {
-  background-color: blue;
   visibility: hidden; }
 
 select {
@@ -60,12 +60,21 @@ option {
 .titlescript {
   font-family: 'Pacifico', Helvetica, Arial, sans-serif;
   font-size: 300%;
-  color: #f8fcff; }
+  color: #dfe3e5; }
 
 .titleblock {
   font-family: 'turnpike', Helvetica, Arial, sans-serif;
   font-size: 400%;
+  color: #dfe3e5; }
+
+a {
+  color: #052f6d; }
+
+a:hover {
   color: #0f4dab; }
+
+a:focus {
+  color: #437dd4; }
 
 .space {
   margin: 25% 0 0 0; }
