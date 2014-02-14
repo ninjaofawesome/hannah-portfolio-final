@@ -1,1 +1,50 @@
-<div class = "box"></div>
+<nav class = "navbar navbar-default">
+	<div class ="container-fluid">
+	    <div class = "row">
+	    	 <!-- Make Navbar Collapse Later -->
+		    <div class = "navbar header">
+		    	<div class = "collapse navbar-collapse">
+			    	<ul class = "nav navbar-nav">
+			    		<li><a href = "#"><i class="fa fa-envelope"></i></a></li>
+			    		<li><a href = "#"><i class="fa fa-twitter-square"></i></a></li>
+			    		<li><a href = "#"><i class="fa fa-github-square"></i></a></li>
+			    		<li><a href = "#"><i class="fa fa-tumblr-square"></i></a></li>
+			    	</ul>
+			    </div>
+			</div>
+</nav>
+
+	 <div class = "col-md-6 space">
+	 	<h1 class ="titlescript">Hello, I'm</h1>
+	 		<h1 class="titleblock">Hannah Nordgren.</h1>
+	 </div>
+
+
+	<div class = "col-md-6 offset-4">	
+        <div class= "box"></div>   
+	    <div class = "row">
+            <form method = "POST" action="http://localhost9393/about">
+            <div class ="col-md-12 space">
+                <select onchange="this.form.submit()" id = "info" class = "dropdown" name="background">
+                	<option class="professional" value="nil">Get To Know Me.</option>
+                    <option class="professional" value="college">My Alma Mater(s)</option>
+                    <option class="professional" value="career">My Work Experience</option>
+                    <option class="professional" value="interests">My Technical Interests</option>
+                    <option class="professional" value="languages">Programming Languages</option>
+                </select>
+            </div>
+            <div class = "col-md-12 dropdown-space">
+                <select onchange="this.form.submit()"  id = "work" class= "dropdown" name="portfolio_example">
+                	<option class="portfolio" value="nil">Check Out My Work.</option>
+                    <option class="portfolio" value="ruby">Airport</option>
+                    <option class="portfolio" value="sinatra[0]">East Coast/West Coast</option>
+                    <option class="portfolio" value="sinatra[1]">The Great Oracle</option>
+                    <option class="portfolio" value="js">O'Reilly JS Overview</option>
+                </select>
+            </div>
+	    </div>
+	</div>
+
+
+        </div> <!-- this closes the row -->
+    </div>  <!-- this closes the container -->

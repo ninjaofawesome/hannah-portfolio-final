@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20140212145546) do
 
-  create_table "hannah", force: true do |t|
+  create_table "hannahs", force: true do |t|
     t.string "achievement_name"
     t.string "achievement_info"
   end

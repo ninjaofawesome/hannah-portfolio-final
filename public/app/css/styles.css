@@ -1,24 +1,24 @@
 @font-face {
-  font-family: 'Motion Picture';
-  src: url("../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot");
+  font-family: 'turnpike';
+  src: url("../fonts/turnpike/turnpike-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/motionpicture/motionpicture_personaluseonly-webfont.woff") format("woff"), url("../fonts/motionpicture/motionpicture_personaluseonly-webfont.ttf") format("truetype"), url("../fonts/motionpicture/motionpicture_personaluseonly-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/turnpike/turnpike-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/turnpike/turnpike-webfont.woff") format("woff"), url("../fonts/turnpike/turnpike-webfont.ttf") format("truetype"), url("../fonts/turnpike/turnpike-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
-  font-family: 'Go Bold';
-  src: url("../fonts/gobold/gobold_bold-webfont.eot");
+  font-family: 'Pacifico';
+  src: url("../fonts/pacifico/pacifico-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/gobold/gobold_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gobold/gobold_bold-webfont.woff") format("woff"), url("../fonts/gobold/gobold_bold-webfont.ttf") format("truetype"), url("../fonts/gobold/gobold_bold-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/pacifico/pacifico-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico-webfont.woff") format("woff"), url("../fonts/pacifico/pacifico-webfont.ttf") format("truetype"), url("../fonts/pacifico/pacifico-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 .box {
-  width: 100px;
   height: 100px;
+  width: 100px;
   background-color: red; }
 
 body {
-  background: url("../img/flatiron.png") no-repeat center center fixed;
+  background: url("../img/hannah.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,30 +30,45 @@ body {
   margin: 0 -15px; }
 
 .navbar-default {
-  background-color: rgba(255, 0, 0, 0.5);
-  border: yellow;
+  background-color: rgba(248, 252, 255, 0.01);
+  border: none;
   height: 30px; }
 
 .navbar-default .navbar-nav > li > a {
-  color: white; }
+  color: #052f6d; }
 
 .hidden {
   background-color: blue;
   visibility: hidden; }
 
-.dropdown {
-  background-color: green;
-  border: 2px solid black; }
+select {
+  background-color: #052f6d;
+  border: none;
+  border: 2px solid #2b4b73;
+  font-family: 'turnpike', Helvetica, Arial, sans-serif;
+  font-size: 175%;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+option {
+  font-family: 'pacifico', Helvetica, Arial, sans-serif;
+  background-color: red; }
 
 .shown {
   background-color: purple; }
 
 .titlescript {
-  font-family: 'Motion Picture', Helvetica, Arial, sans-serif;
+  font-family: 'Pacifico', Helvetica, Arial, sans-serif;
   font-size: 300%;
-  color: blue; }
+  color: #f8fcff; }
 
-.titlefont {
-  font-family: 'Go Bold', Helvetica, Arial, sans-serif;
-  font-size: 200%;
-  color: red; }
+.titleblock {
+  font-family: 'turnpike', Helvetica, Arial, sans-serif;
+  font-size: 400%;
+  color: #0f4dab; }
+
+.space {
+  margin: 25% 0 0 0; }
+
+.dropdown-space {
+  margin: 5% 0 0 0; }

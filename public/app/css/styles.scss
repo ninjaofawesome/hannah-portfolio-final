@@ -12,32 +12,39 @@ $pop-white: #f8fcff;
 $cool-brown: #403826;
 $warm-brown: #372710; 
 
+
 @font-face {
-	font-family: 'Motion Picture';
-	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.woff') format('woff'), /* Modern Browsers */
-	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'turnpike';
+	src: url('../fonts/turnpike/turnpike-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/turnpike/turnpike-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/turnpike/turnpike-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/turnpike/turnpike-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/turnpike/turnpike-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 	}
 
 @font-face {
-	font-family: 'Go Bold';
-	src: url('../fonts/gobold/gobold_bold-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/gobold/gobold_bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('../fonts/gobold/gobold_bold-webfont.woff') format('woff'), /* Modern Browsers */
-	     url('../fonts/gobold/gobold_bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('../fonts/gobold/gobold_bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'Pacifico';
+	src: url('../fonts/pacifico/pacifico-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/pacifico/pacifico-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/pacifico/pacifico-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/pacifico/pacifico-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/pacifico/pacifico-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 	}
+
+
 
 
 
 //general
 
-.box { width: 100px; height: 100px; background-color: red;}
+.box {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
 
 body{
-    background: url('../img/flatiron.png') no-repeat center center fixed;
+    background: url('../img/hannah.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -53,13 +60,13 @@ body{
 
 //Nav-bar
 .navbar-default {
-	background-color: rgba(255, 0, 0, .5);
-	border: yellow;
+	background-color: rgba(248, 252, 255, .01);
+	border: none;
 	height: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: $dk-blue;
 }
 
 //Boxes
@@ -71,12 +78,22 @@ body{
 
 //Buttons and Selection
 
-.dropdown {
-	background-color: green;
-	// border-radius: none;
-	border: 2px solid black;
+select {
+	background-color: $dk-blue;
+	border: none;
+	border: 2px solid $dk-dusty-blue;
+	font-family: 'turnpike', Helvetica, Arial, sans-serif;
+	font-size: 175%;
+	 -webkit-box-shadow: none;
+	          box-shadow: none;
 	// padding: 2% 5%;
 }
+
+option {
+	font-family: 'pacifico', Helvetica, Arial, sans-serif;
+	background-color: red;
+}
+
 
 .shown {
 	background-color: purple;
@@ -85,13 +102,22 @@ body{
 //fonts
 
 .titlescript {
-	font-family: 'Motion Picture', Helvetica, Arial, sans-serif;
+	font-family: 'Pacifico', Helvetica, Arial, sans-serif;
 	font-size: 300%;
-	color: blue;
+	color: $pop-white;
 }
 
-.titlefont {
-	font-family: 'Go Bold', Helvetica, Arial, sans-serif;
-	font-size: 200%;
-	color: red;
+.titleblock {
+	font-family: 'turnpike', Helvetica, Arial, sans-serif;
+	font-size: 400%;
+	color: $pop-blue;
+}
+
+//spacing
+
+.space {
+	margin: 25% 0 0 0;
+}
+.dropdown-space {
+	margin: 5% 0 0 0;
 }
