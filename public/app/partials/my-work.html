@@ -16,8 +16,11 @@
 
 	 <div class = "col-md-6">
         <div class = "background-box">
-    	 	<h1>Hello</h1>
-            <p>{{hannah}}</p>
+    	 	<ul class = "hannah">
+                 <li ng-repeat="hannah in hannahs | filter:query" class="hannah">
+          <!--   <a href="#/about/{{hannah.id}}"> -->
+                <li>{{hannah.achievement_name}}</li>
+            </ul>
         </div>
 	 </div>
 

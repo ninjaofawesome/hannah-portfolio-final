@@ -15,20 +15,19 @@ class CreateHannah < Sinatra::Application
 
 	get '/' do
 		File.read('public/app/index.html');
-        # File.read(File.join('public/app', 'index.html'))
 		# erb :index
 	end
 
-    get '/about' do
+	get '/about' do
         @hannah = Hannah.all
         @hannah.to_json
     end
 
 	post '/about' do
 		#figure out what is causing sinatra to freak out on this.
-        # @hannah = Hannah.create!(params)
+        @hannah = Hannah.create!(params)
 
-        redirect '/'
+        redirect '/#/about'
 		# erb :about
 	end
 

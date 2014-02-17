@@ -13,11 +13,11 @@ hannahApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'partials/welcome-page.html',
 			controller: 'HannahListCtrl'
 		}).
-		when('/me',{
+		when('/about',{
 			templateUrl: 'partials/my-work.html',
 			controller: 'HannahListCtrl'
 		}).
-		when('/me/:id',{
+		when('/about/:id',{
 			templateUrl: 'partials/my-work.html',
 			controller: 'HannahDetailCtrl'
 		}).

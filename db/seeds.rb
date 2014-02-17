@@ -1,5 +1,5 @@
 Hannah.create!(
-	"achievement_name" => "highschool",
+	"achievement_name" => "high school",
 	"achievement_info" => "Graduated May 1996"
 )
 Hannah.create!(
@@ -37,3 +37,27 @@ Hannah.create!(
 	"achievement_info" => "2012-2013, Nifty Thrifty"
 	
 )
+
+# Hannah.create!(
+# 	"work_name" => "Ruby",
+# 	"work_info" => "airport"
+	
+# )
+
+# Hannah.create!(
+# 	"work_name" => "Sinatra[0]",
+# 	"work_info" => "east coast/west coast"
+	
+# )
+
+# Hannah.create!(
+# 	"work_name" => "Sinatra[1]",
+# 	"work_info" => "the great oracle"
+	
+# )
+
+# Hannah.create!(
+# 	"work_name" => "js",
+# 	"work_info" => "The oreilly overview"
+	
+# )
