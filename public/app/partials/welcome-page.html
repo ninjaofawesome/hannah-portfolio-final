@@ -1,5 +1,5 @@
-<nav class = "navbar navbar-default">
-	<div id = "#" class ="container-fluid">
+<div class ="container-fluid">
+    <nav class = "navbar navbar-default">
 	    <div class = "row">
 	    	 <!-- Make Navbar Collapse Later -->
 		    <div class = "navbar header">
@@ -24,15 +24,22 @@
        <!--  <div class= "box"></div> -->   
 	    <div class = "row">
             <form method = "POST" action="http://localhost:9393/about">
-            <div class ="col-md-12 space">
-                <select onchange="this.form.submit()" id = "info" class = "dropdown" name="achievement_name">
-                	<option class="professional">Get To Know Me.</option>
-                    <option class="professional" value="college">My Alma Mater(s)</option>
-                    <option class="professional" value="career">My Work Experience</option>
-                    <option class="professional" value="interests">My Technical Interests</option>
-                    <option class="professional" value="languages">Programming Languages</option>
-                </select>
-            </div>
+               <!--  <div class = "col-md-12">
+                    <div class = "background-box">
+                        <button>This is a button</button>
+                    </div>
+                </div>
+                <div class ="hidden"> -->
+                    <div class ="col-md-12 space">
+                        <select onchange="this.form.submit()" id = "info" class = "dropdown" name="achievement_name">
+                        	<option class="professional">Get To Know Me.</option>
+                            <option class="professional" value="college">My Alma Mater(s)</option>
+                            <option class="professional" value="career">My Work Experience</option>
+                            <option class="professional" value="interests">My Technical Interests</option>
+                            <option class="professional" value="languages">Programming Languages</option>
+                        </select>
+                    </div>
+               <!--  </div> -->
             <!-- <div class = "col-md-12 dropdown-space">
                 <select onchange="this.form.submit()"  id = "work" class= "dropdown" name="work_name">
                 	<option class="portfolio" value="nil">Check Out My Work.</option>
@@ -48,3 +55,5 @@
 
         </div> <!-- this closes the row -->
     </div>  <!-- this closes the container -->
+
+    

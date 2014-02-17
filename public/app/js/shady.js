@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	console.log('hello shady');
-	$(this).find('shady').fadeIn();
-	});
-
+	//this isn't working. >:(
+	$('.hello').addClass('shady');
 });
+

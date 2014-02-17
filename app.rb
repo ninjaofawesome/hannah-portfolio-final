@@ -1,6 +1,8 @@
 require 'bundler'
 Bundler.require
 require 'sinatra/activerecord'
+require 'sass'
+require 'compass'
 
 Dir["./lib/*"].each {|file| require file }
 
@@ -12,6 +14,12 @@ class CreateHannah < Sinatra::Application
 	end
 
 	set :database, "sqlite3:///database.db"
+
+	get '/styles.css' do
+		# scss "styles.scss"
+		scss :styles, :style => :expanded
+
+	end
 
 	get '/' do
 		File.read('public/app/index.html');
@@ -25,9 +33,9 @@ class CreateHannah < Sinatra::Application
 
 	post '/about' do
 		#figure out what is causing sinatra to freak out on this.
-        @hannah = Hannah.create!(params)
+        # @hannah = Hannah.create!(params)
 
-        redirect '/#/about'
+        redirect '#/about'
 		# erb :about
 	end
 
