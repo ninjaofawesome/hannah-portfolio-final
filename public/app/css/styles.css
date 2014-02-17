@@ -36,6 +36,16 @@ body {
   min-height: 600px;
   background-color: #0f4dab; }
 
+button {
+  background-color: #052f6d;
+  border: none;
+  border: 2px solid #2b4b73;
+  font-family: 'turnpike', Helvetica, Arial, sans-serif;
+  font-size: 175%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: center; }
+
 select {
   background-color: #052f6d;
   border: none;
@@ -72,11 +82,18 @@ a:hover {
 a:focus {
   color: #437dd4; }
 
+.accomplishment {
+  list-style-type: none;
+  font-family: 'turnpike', helvetica, arial, sans-serif; }
+
 .space {
   margin: 25% 0 0 0; }
 
 .dropdown-space {
   margin: 5% 0 0 0; }
+
+.spacer {
+  padding: 0 11%; }
 
 .shady {
   background-color: red; }

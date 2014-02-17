@@ -83,6 +83,18 @@ body{
 
 //Buttons and Selection
 
+button {
+	background-color: $dk-blue;
+	border: none;
+	border: 2px solid $dk-dusty-blue;
+	font-family: 'turnpike', Helvetica, Arial, sans-serif;
+	font-size: 175%;
+	 -webkit-box-shadow: none;
+	          box-shadow: none;
+	text-align: center;
+	// padding: 2% 5%;
+}
+
 select {
 	background-color: $dk-blue;
 	border: none;
@@ -130,6 +142,11 @@ a:focus {
 	color: $lt-blue;
 }
 
+.accomplishment {
+	list-style-type: none;
+	font-family: 'turnpike', helvetica, arial, sans-serif;
+}
+
 //spacing
 
 .space {
@@ -137,6 +154,10 @@ a:focus {
 }
 .dropdown-space {
 	margin: 5% 0 0 0;
+}
+
+.spacer {
+	padding: 0 11%;
 }
 
 //cool javascript stuff
