@@ -24,6 +24,7 @@
                     {{accomplishment.achievement_name}}:
                     {{accomplishment.achievement_info}}
                 </li>
+                <button onclick="enable();" class="button-space" id="#" type="submit">Close</button>
             </ul>
         </div>
 	 </div>
@@ -34,8 +35,8 @@
 	<div class = "col-md-6 offset-4">	
        <div class = "row space">
             <form method = "POST" action="http://localhost:9393/about">
-            <button class = "dropdown-space spacer" type="submit" value="about">Get To Know Me</button>
-            <button class = "dropdown-space" type="submit" value="work">Get To Know My Work</button>
+            <button onclick="disable();"class = "button-space spacer" id="clicky1" type="submit" value="about">Get To Know Me</button>
+            <button onclick="disable();"class = "button-space" id="clicky2" type="submit" value="work">Get To Know My Work</button>
         </div>
 	</div>
 </div>
