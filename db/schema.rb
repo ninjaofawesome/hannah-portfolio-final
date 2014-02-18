@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140214214659) do
+ActiveRecord::Schema.define(version: 20140218221832) do
 
   create_table "hannahs", force: true do |t|
     t.string "achievement_name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140214214659) do
   create_table "portfolio", force: true do |t|
     t.string "work_name"
     t.string "work_info"
+    t.string "url"
   end
 
 end

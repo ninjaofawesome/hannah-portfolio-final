@@ -155,12 +155,34 @@ a:focus {
 .button-space {
 	margin: 5% 0 0 0;
 }
+.button-space2 {
+	margin: 5% 0 5% 0;
+}
 
 .spacer {
 	padding: 0 11%;
 }
 
+
 //cool javascript stuff
+
+.event {
+	color: $pale-blue;
+
+}
+
+.details {
+	color: $pop-blue;
+	transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+
+.details:hover{
+	color: $lt-gray;
+}
 
 .shady {
 	background-color: rgba(255, 0, 0, 1);

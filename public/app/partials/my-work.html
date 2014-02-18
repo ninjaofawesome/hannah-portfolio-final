@@ -21,10 +21,10 @@
             <h2 class="titleblock">Here's some of the things I've done</h2>
     	 	 <ul class ="accomplishment">
                 <li ng-repeat="accomplishment in hannahsAccomplishments">
-                    {{accomplishment.achievement_name}}:
-                    {{accomplishment.achievement_info}}
+                    <div class = "event">{{accomplishment.achievement_name}}</div>
+                    <div class = "details">{{accomplishment.achievement_info}}</div>
                 </li>
-                <button onclick="enable();" class="button-space" id="#" type="submit">Close</button>
+                <button onclick="enable();" class="button-space2" id="#" type="submit">Close</button>
             </ul>
         </div>
 	 </div>

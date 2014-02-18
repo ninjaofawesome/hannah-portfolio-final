@@ -1,4 +1,4 @@
-
+console.log('buttons.js has loaded');
 
 function disable(){
     console.log('You clicked the button.  Have a cookie.');
