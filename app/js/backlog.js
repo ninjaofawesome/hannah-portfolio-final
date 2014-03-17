@@ -1,5 +1,78 @@
  // THESE WERE THE PROTOTYPES FOR THE HIDE SCRIPT
+//none of these worked, but a valiant effort.
+$(document).ready(function(){
+    console.log('fader has loaded');
 
+       $('#work li').hide(); 
+       $('#projects li').hide(); 
+
+    function buttonClick(){
+        $('#work-btn').click(function(event){
+            console.log('work button click');
+            //pseudo code: if projects button clicked after work
+              $('#projects li').each(function(){
+                // $('#work li').hide();
+                $(this).fadeOut(5000);
+            });
+            // else
+            $('#work li').each(function(){
+                var delay = 0;
+                $(this).delay(delay).fadeIn(5000)
+                delay += 1000;
+            });
+        });
+    } //this ends buttonClick
+    buttonClick();
+
+    function buttonClicker(){
+        $('#projects-btn').click(function(event){
+            console.log('projects button click');
+            //pseudo code: if work button clicked after projects, do
+            $('#work li').each(function(){
+                $(this).fadeOut(2500);
+            });
+            //else
+            $('#projects li').each(function(){
+                // $(this).delay(1000);
+                // $('#work li').hide();
+                $(this).fadeIn(5000);
+            });
+        });
+    } //this ends buttonClicker
+    buttonClicker();
+
+
+});
+
+
+function showMeTheItem(){
+        // $('.teaser').hide();
+        $('.a').hide();
+        $('.b').hide();
+        $('.c').hide();
+        $('.d').hide();
+
+        $('.show-me').click(function(event){
+        if($('.a')){
+            console.log('button a pushed');
+            $('.a').slideDown().fadeIn();  
+        }else if($('.b')){
+            console.log('button b pushed');
+            $('.b').slideDown().fadeIn(); 
+        }else if($('.c')){
+            console.log('button c pushed');
+            $('.c').slideDown().fadeIn(); 
+        }else if($('.d')){
+            console.log('button d pushed');
+            $('.d').slideDown().fadeIn(); 
+        }else{
+            console.log('this is the end of the line');
+        }
+
+        });
+    }
+    showMeTheItem();
+    
 
  //this one works, if you mess up go back to it!
 

@@ -33,9 +33,9 @@
         <div class = "background-box-work">
           <ul ng-repeat="job in jobs">
             <li>
-              <h1>{{job.name}}</h1>
-                <h2>{{job.company}}</h2>
-                <p>{{job.date}}</p>
+              <h1 class="work-title">{{job.name}}</h1>
+                <h2 class = "work">{{job.company}}</h2>
+                <p class = "work">{{job.date}}</p>
             </li>
           </ul>
         </div>
@@ -45,15 +45,17 @@
         <div class = "background-box-projects">
           <ul ng-repeat="project in projects">
             <li>
-              <h1>{{project.name}}</h1>
-                <h2>{{project.date}}</h2>
-                <button id={{project.id}} class = "btn primary">Show More</button>
-                <p id={{project.number}}>{{project.description}}
-                  <br>
-                <a href="{{project.link}}" target= "_blank">Check It Out</a>
-                <br>
-                <button id={{project.hide}} class = "btn primary">Show less</button>
-              </p>
+              <h1 class="projects-title">{{project.name}}</h1>
+                <h2 class="projects">{{project.date}}</h2>
+                <button id={{project.id}} class = "btn-primary-projects">Show More</button>
+                <div class="projects-box" id={{project.number}}>
+                  <p class="projects" id={{project.number}}>{{project.description}}
+                    <br>
+                    <a href="{{project.link}}" target= "_blank">Check It Out</a>
+                    <br>
+                    <button id={{project.hide}} class = "btn-primary-show-less">Show less</button>
+                  </p>
+                </div>
             </li>
           </ul>
         </div>
@@ -63,11 +65,11 @@
   </div>
 
   <div class = "col-md-6">
-    <h2>Hello, I'm</h2>
-    <h1>Hannah Nordgren.</h1>
+    <h2 class="intro-subtitle">Hello, I'm</h2>
+    <h1 class="intro">Hannah Nordgren.</h1>
 
-    <button id = "work-btn" class = "btn primary">Get to know me</button>
-    <button id = "projects-btn" class = "btn primary">Get to know my work</button>
+    <button id = "work-btn" class = "btn-primary">Get to know me</button>
+    <button id = "projects-btn" class = "btn-primary">Get to know my work</button>
   </div>
 </div>
   <!-- <div ng-view></div> -->

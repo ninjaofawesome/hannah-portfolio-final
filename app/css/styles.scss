@@ -1,10 +1,23 @@
 //VARIABLES
+//blue family
+$rich-blue: #0E2FB3;
+$pale-blue: #6080FF;
+$blue: #1443FF;
+$navy: #30407F;
+$pop-blue: #1036CC;
+//putty (wall color)
+$warm-gray: #C4C1BC;
+$lt-warm-gray: #FFFBF5;
+$crisp-gray: #CCC9C4;
+$beige: #FFDEA8;
+$fawn: #7F6F54;
+//whites
+$white: #FFFFFF;
+$off-white: #FFFBF5;
+$cool-gray: #889DB2;
+$pale-cool-gray: #F5FAFF;
 
 //MIXINS
-
-
-
-//FONTS
 
 //GENERAL
 body{
@@ -13,8 +26,175 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
+    font-family: 'Turnpike', Arial, Helvetica, sans-serif;
    
 }
+
+ul{
+	list-style-type: none;
+}
+
+//BOXES
+
+.background-box-work, .background-box-projects {
+	background-color: $rich-blue;
+	margin-left: 5%;
+	padding: 2%;
+}
+
+.projects-box {
+	background-color: $pale-blue;
+	padding: 2%;
+}
+
+
+//FONTS
+
+@font-face {
+	font-family: 'Motion Picture';
+	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/motionpicture/motionpicture_personaluseonly-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+@font-face {
+	font-family: 'Go Bold';
+	src: url('../fonts/gobold/gobold_bold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/gobold/gobold_bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/gobold/gobold_bold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/gobold/gobold_bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/gobold/gobold_bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+@font-face {
+	font-family: 'Turnpike';
+	src: url('../fonts/turnpike/turnpike-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/turnpike/turnpike-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/turnpike/turnpike-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/turnpike/turnpike-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/turnpike/turnpike-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+@font-face {
+	font-family: 'Pacifico';
+	src: url('../fonts/pacifico/pacifico-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/pacifico/pacifico-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/pacifico/pacifico-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/pacifico/pacifico-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/pacifico/pacifico-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+h1.projects, h2.projects, h3.projects, h4.projects, h5.projects, h6.projects{
+	color: $blue;
+	font-family: 'Pacifico', Helvetica, Arial, sans-serif;
+	margin-top: 0;
+}
+
+h1.projects-title, h2.projects-title, h3.projects-title, h4.projects-title, h5.projects-title, h6.projects-title{
+	color: $pale-blue;
+	font-family: 'Turnpike', Helvetica, Arial, sans-serif;
+	font-size: 325%;
+}
+
+h1.work, h2.work, h3.work, h4.work, h5.work, h6.work{
+	color: $blue;
+	font-family: 'Pacifico', Helvetica, Arial, sans-serif;
+	margin-top: 0;
+}
+
+h1.work-title, h2.work-title, h3.work-title, h4.work-title, h5.work-title, h6.work-title{
+	color: $pale-blue;
+	font-family: 'Pacifico', Helvetica, Arial, sans-serif;
+	font-size: 325%;
+}
+
+p.projects{
+	color: $white;
+}
+
+a {
+  background: transparent;
+  color: $blue;
+}
+a:active,
+a:hover {
+  outline: 0;
+  color: $navy;
+}
+
+.intro {
+	color: $navy;
+	font-family: 'Turnpike', Helvetica, Arial, sans-serif;
+	font-size: 500%;
+	font-weight: 900;
+	margin-top: 0;
+
+}
+
+.intro-subtitle{
+	margin-top: 20%;
+	color: $pale-blue;
+	font-family: 'Pacifico', Helvetica, Arial, sans-serif;
+	font-size: 300%;
+	font-weight: 900;
+}
+
+//BUTTONS
+
+.btn-primary {
+  color: $pale-blue;
+  background-color: $navy;
+  border-color: $navy;
+  padding: 2%;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: $pale-cool-gray;
+  background-color: $pale-blue;
+  border-color: $pale-blue;
+}
+
+.btn-primary-projects {
+  color: $pale-blue;
+  background-color: $blue;
+  border-color: $blue;
+  padding: 2%;
+}
+.btn-primary-projects:hover,
+.btn-primary-projects:focus,
+.btn-primary-projects:active,
+.btn-primary-projects.active,
+.open .dropdown-toggle.btn-primary-projects {
+  color: $pale-cool-gray;
+  background-color: $pale-blue;
+  border-color: $pale-blue;
+}
+
+.btn-primary-show-less {
+  color: $pale-blue;
+  background-color: $blue;
+  border-color: $blue;
+  padding: 2%;
+}
+.btn-primary-show-less:hover,
+.btn-primary-show-less:focus,
+.btn-primary-show-less:active,
+.btn-primary-show-less.active,
+.open .dropdown-toggle.btn-primary-show-less {
+  color: $pale-cool-gray;
+  background-color: $navy;
+  border-color: $navy;
+}
+
+*:focus {
+    outline: 0;
+}
+
 
 //NAVBAR
 
@@ -22,4 +202,12 @@ body{
    background: rgb(255, 255, 255); /* The Fallback */
    background: rgba(255, 255, 255, 0.01); 
    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: $navy;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+color: $pop-blue;
 }
