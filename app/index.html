@@ -2,6 +2,7 @@
 <html lang="en" ng-app="myportfolioApp">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>H A N N A H</title>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
@@ -15,10 +16,11 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
        <div class="navbar-header">
-          <ul class = "nav navbar-nav">
-            <li><a href= "https://github.com/ninjaofawesome"><i class="fa fa-github-alt fa-3x"></i></a></li>
-            <li><a href= "https://twitter.com/hnsayshello"><i class="fa fa-twitter fa-3x"></i></a></li>
-            <li><a href= "http://anunorderedlistapart.tumblr.com/"><i class="fa fa-tumblr fa-3x"></i></a></li>
+          <ul class="nav navbar-nav">
+            <li><a href="https://github.com/ninjaofawesome"><i class="fa fa-github-alt fa-3x"></i></a></li>
+            <li><a href="https://twitter.com/hnsayshello"><i class="fa fa-twitter fa-3x"></i></a></li>
+            <li><a href="http://anunorderedlistapart.tumblr.com/"><i class="fa fa-tumblr fa-3x"></i></a></li>
+            <li><a href="mailto:hey@hereshannahs.info?subject=Hello!"><i class="fa fa-bullhorn fa-3x"></i></a></li>
           </ul>  
        </div>
     </div>
@@ -29,15 +31,25 @@
   <div class = "col-md-6">
     <div class = "background-box">
 
-      <div class = "row" ng-controller="HannahWorkCtrl">
-        <div class = "background-box-work">
-          <ul ng-repeat="job in jobs">
-            <li>
-              <h1 class="work-title">{{job.name}}</h1>
-                <h2 class = "work">{{job.company}}</h2>
-                <p class = "work">{{job.date}}</p>
-            </li>
-          </ul>
+      <div class="row" ng-controller="HannahWorkCtrl">
+        <div class="background-box-work">
+            <p>I love making beautiful applications, approaching web development from front-end to back-end: one of my favorite things is figuring out how a user will experience a product at the outset. I enjoy seeing how people interact with my work and spend a lot of time thinking about how to make the user experience better. I credit mydesign and development perspective largely to my background in the fashion and beauty industries.</p> 
+
+            <p> 
+              I began to code in my spare time as a means of merging my need for creative expression and my love of problem solving.  Eventually my coding interest led me away from my previous career as a hairdresser to working for startups and later as a fellow at the Flatiron School for the Full Stack Web Development program, and I've never looked back at that salon chair. 
+            </p>
+            <button id = "work-box-button" class = "btn-primary-show-less">Work History</button>
+
+          <div class="work-box">
+            <ul ng-repeat="job in jobs">
+              <li>
+                <h1 class="work-title">{{job.name}}</h1>
+                  <h2 class = "work">{{job.company}}</h2>
+                  <p class = "work">{{job.date}}</p>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
@@ -89,5 +101,7 @@
   <script src="js/hide.js"></script>
   <script src="js/teaser.js"></script>
   <script src="js/goaway.js"></script>
+
+
 </body>
 </html>
