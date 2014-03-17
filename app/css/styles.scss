@@ -1,0 +1,25 @@
+//VARIABLES
+
+//MIXINS
+
+
+
+//FONTS
+
+//GENERAL
+body{
+    background: url('../img/hannah.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+   
+}
+
+//NAVBAR
+
+.navbar-default {
+   background: rgb(255, 255, 255); /* The Fallback */
+   background: rgba(255, 255, 255, 0.01); 
+   border: none;
+}
