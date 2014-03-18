@@ -1,3 +1,0 @@
-class Results
-
-end
