@@ -31,15 +31,18 @@
   <div class = "col-md-6">
     <div class = "background-box">
 
+<div class="hello"> TEST! </div>
+
       <div class="row" ng-controller="HannahWorkCtrl">
         <div class="background-box-work">
+          
             <p>I love making beautiful applications, approaching web development from front-end to back-end: one of my favorite things is figuring out how a user will experience a product at the outset. I enjoy seeing how people interact with my work and spend a lot of time thinking about how to make the user experience better. I credit mydesign and development perspective largely to my background in the fashion and beauty industries.</p> 
 
             <p> 
               I began to code in my spare time as a means of merging my need for creative expression and my love of problem solving.  Eventually my coding interest led me away from my previous career as a hairdresser to working for startups and later as a fellow at the Flatiron School for the Full Stack Web Development program, and I've never looked back at that salon chair. 
             </p>
             <button id = "work-box-button" class = "btn-primary-show-less">Work History</button>
-
+          </div>
           <div class="work-box">
             <ul ng-repeat="job in jobs">
               <li>
@@ -48,7 +51,7 @@
                   <p class = "work">{{job.date}}</p>
               </li>
             </ul>
-          </div>
+        
 
         </div>
       </div>
